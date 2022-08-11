@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue May  3 12:21:45 2022
+
+@author: grahamsmith
+"""
+
+import pandas as pd
+import matplotlib.image as mpimg
+from numpy import asarray
+from PIL import Image
+import glob
+
+alerts = []
+for file in glob.glob("/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/alert/*.jpg"):
+    img = asarray(Image.open(file))
+    alerts.append(img)
+
+buttons = []
+for file in glob.glob("/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/button/*.jpg"):
+    img = asarray(Image.open(file))
+    buttons.append(img)
+
+cards = []
+for file in glob.glob("/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/card/*.jpg"):
+    img = asarray(Image.open(file))
+    cards.append(img)
+
+checkbox_checked = []
+for file in glob.glob("/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/checkbox_checked/*.jpg"):
+    img = asarray(Image.open(file))
+    checkbox_checked.append(img)
+    e
+checkbox_unchecked = []
+for file in glob.glob("/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/checkbox_unchecked/*.jpg"):
+    img = asarray(Image.open(file))
+    checkbox_unchecked.append(img)
+    
+checkbox_unchecked = []
+for file in glob.glob("/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/checkbox_unchecked/*.jpg"):
+    img = asarray(Image.open(file))
+    checkbox_unchecked.append(img)
+
+df = []
+for folder in glob.glob("/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/*"):
+    names = []
+    for file in glob.glob(str(folder)):
+        img = asarray(Image.open(file))
+        names.append(img)
+        df[str(file)] = names
+
+names = []
+for file in glob.glob("/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/button"):
+        img = asarray(Image.open(file))
+        names.append(img)
+
+for file in glob.glob("/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/*"):
+    a = file
+    print(a)
+
+names = []
+for file in glob.glob(a + "/*"):
+        img = asarray(Image.open(file))
+        names.append(img)
+
+
+
+
+
+  
+# asarray() class is used to convert
+# PIL images into NumPy arrays
+numpydata = asarray(img)
+
+df = pd.read_csv(r'/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/labels.csv')
+testimg = mpimg.imread('/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/alert/0000.jpg')
+
+import glob
+
+alerts = []  
+for name in glob.glob("/Users/grahamsmith/Documents/SpringboardWork/Springboard/UISketch dataset/alert/*.jpg"):
+    alerts.append(name)
